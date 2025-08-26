@@ -1,0 +1,99 @@
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f3f3;
+  color: #333;
+  line-height: 1.6;
+}
+
+table[bgcolor="orange"] h2,
+table[bgcolor="orange"] 
+p {
+  color: black;  
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+}
+
+
+table[bgcolor="orange"] {
+  background: linear-gradient(90deg, #ff9800, #ff5722);
+  color: white;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+table[bgcolor="orange"] h2 {
+  margin: 10px 0;
+  font-size: 28px;
+}
+
+table[bgcolor="orange"] a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 8px;
+}
+
+table[bgcolor="orange"] a:hover {
+  text-decoration: underline;
+}
+
+
+table[width="100%"]:not([bgcolor]) {
+  margin: 20px auto;
+  border-spacing: 20px;
+}
+
+
+td {
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+
+td h3 {
+  border-left: 5px solid #ff5722;
+  padding-left: 10px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+
+ol li, ul li {
+  margin: 8px 0;
+}
+
+
+form input[type="text"],
+form textarea {
+  width: 95%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  background: #ff5722;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+form input[type="submit"]:hover {
+  background: #e64a19;
+}
+
+
+table[bgcolor="green"] {
+  background: #2e7d32;
+  color: white;
+  margin-top: 20px;
+  font-size: 14px;
+  box-shadow: 0 -2px 6px rgba(0,0,0,0.2);
+}
