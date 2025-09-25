@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Form-related Pseudo-classes</title>
+
+<style>
+          body{
+                    background-color: #111;
+                    color: white;
+                    font-family: Arial, Helvetica, sans-serif;
+                    padding: 20px;
+          }
+          h2{
+                    margin-bottom: 20px;
+          }
+          input,select,textarea,button{
+                    display: block;
+                    margin: 10px 0 20px 0;
+                    padding: 10px;
+                    border-radius: 8px;
+                    border: 2px solid #444;
+                    width: 300px;
+                    background: #222;
+                    color: white;
+          }
+          input:valid{
+                    border-color: green;
+          }
+          input:invalid{
+                    border-color: red;
+          }
+          input:required{
+                    background-color: #222;
+          }
+          input:optional{
+                    border-style: dashed;
+          }
+          input:disabled{
+                    background: #444;
+                    color: #999;
+                    border-color: gray;
+          }
+          input[type="radio"]:checked+label,
+          input[type="checkbox"]:checked+label
+          {
+                    font-weight: bold;
+                    color: #1e90ff;
+          }
+          button:enabled{
+                    border: 2px solid green;
+                    cursor: pointer;
+          }
+          button:disabled{
+                    border: 2px solid gray;
+                    background: #555;
+                    cursor: not-allowed;
+          }
+          a{
+                    color: #1e90ff;
+          }
+</style>
+</head>
+<body>
+          <h2>Form-related Pseudo-classes</h2>
+          <form>
+                    <label>Email (required):</label>
+                    <input type="email" required
+                    placeholder="e.g. name@example.com">
+
+                    <label>Username (pattern:exactly 3 letters):</label>
+                    <input type="text" pattern="[A-Za-z]"
+          </form>
+</body>
+</html>
